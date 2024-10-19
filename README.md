@@ -13,18 +13,19 @@ pip install regex-generate-py
 ```python
 >>> from regex_generate_py import generate
 >>> 
->>> pattern = r"(My|Your) name is an(ji|na|t)"
+>>> pattern = r"(My|Your|His|Her) name is an(ji|na|t|imal) with number \-?[0-9]{2,6}"
 >>> for i in range(10):
 ...     print(generate(pattern))
 ...
-Your name is anna
-My name is ant
-Your name is anji
-Your name is anji
-My name is ant
-Your name is anna
-My name is ant
-My name is anji
-Your name is anji
-My name is ant
 ```
+```text
+My name is animal with number 194
+His name is animal with number 24843
+Her name is anna with number -79
+My name is animal with number 60585
+Your name is animal with number 71877
+Your name is ant with number 41
+Her name is anna with number -16320
+My name is animal with number 353970
+His name is anna with number 42
+Your name is ant with number -040```
